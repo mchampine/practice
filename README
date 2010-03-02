@@ -40,7 +40,7 @@ git push origin master   //push to the server
 
 Machine 1:
 ---------
-git pull origin master
+git pull    //is this enough?
 <do some edits>
 git commit -a -m 'a comment'  //commit all changes and deletions 
-git push origin master
+git push   //don't have to specify where this time
