@@ -1,6 +1,7 @@
 This is my first practice repo on github, establishing the workflow with 2 clients (home,work) and the ability to push changes from each to github and pull to each *from* the server.
 
-Note, making the new repo gives useful hints.
+Note: making the new repo gives useful hints.
+Note: add both starts tracking file and stages files. -a auto stages 
 
 Both Machines - SSH:
 ssh-keygen -C "my@email.com" -t rsa
@@ -23,6 +24,7 @@ git remote add origin git@github.com:mchampine/practice.git //name online repo "
 git push origin master   //push local master branch to origin
 
 Machine 2:
+---------
 git clone git@github.com:mchampine/practice.git  //clone via private url
 
 Add a file to the dir:
@@ -36,3 +38,9 @@ vi README
 git commit -a -m 'a comment'  //commit all changes and deletions 
 git push origin master   //push to the server
 
+Machine 1:
+---------
+git pull origin master
+<do some edits>
+git commit -a -m 'a comment'  //commit all changes and deletions 
+git push origin master
