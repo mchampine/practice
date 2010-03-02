@@ -1,2 +1,37 @@
-Just a test
-Modified in another repo
+This is my first practice repo on github, establishing the workflow with 2 clients (home,work) and the ability to push changes from each to github and pull to each *from* the server.
+
+Note, making the new repo gives useful hints.
+
+Both Machines - SSH:
+ssh-keygen -C "my@email.com" -t rsa
+--add the resulting public keys to github
+
+Both Machines - Setup:
+git config --global user.name "my name"
+git config --global user.email "my@email.com"
+
+--note these can be done locally to without the --global flag
+
+Machine 1
+Make a dir with some files:
+git init
+git add .
+git commit -m 'initial'
+
+Now push it:
+git remote add origin git@github.com:mchampine/practice.git
+git push origin master
+
+Machine 2:
+git clone git@github.com:mchampine/practice.git
+
+Add a file to the dir:
+vi README
+git add README
+git commit -m 'added a readme'
+git push origin master
+
+Edit a file:
+vi README
+git commit -a -m
+
