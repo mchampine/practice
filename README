@@ -4,26 +4,26 @@ Note, making the new repo gives useful hints.
 
 Both Machines - SSH:
 ssh-keygen -C "my@email.com" -t rsa
---add the resulting public keys to github
+//Note: login to github and add the resulting public keys for each client
 
 Both Machines - Setup:
 git config --global user.name "my name"
 git config --global user.email "my@email.com"
-
---note these can be done locally to without the --global flag
+//note these can be done locally to without the --global flag
 
 Machine 1
-Make a dir with some files:
-git init
-git add .
-git commit -m 'initial'
+---------
+mkdir mydir; cd mydir
+git init        //initialize this repo
+git add .       // . recursively adds all the files
+git commit -m 'initial'  //commit changes
 
 Now push it:
-git remote add origin git@github.com:mchampine/practice.git
-git push origin master
+git remote add origin git@github.com:mchampine/practice.git //name online repo "origin" 
+git push origin master   //push local master branch to origin
 
 Machine 2:
-git clone git@github.com:mchampine/practice.git
+git clone git@github.com:mchampine/practice.git  //clone via private url
 
 Add a file to the dir:
 vi README
@@ -33,5 +33,6 @@ git push origin master
 
 Edit a file:
 vi README
-git commit -a -m
+git commit -a -m 'a comment'  //commit all changes and deletions 
+git push origin master   //push to the server
 
