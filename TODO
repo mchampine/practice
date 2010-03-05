@@ -1,0 +1,10 @@
+practice branching and merging
+
+How:
+
+git branch experment
+git checkout experiment
+<add files>
+<change files>
+git add <new files>
+git commit -am 'new stuff'
