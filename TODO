@@ -8,3 +8,16 @@ git checkout experiment
 <change files>
 git add <new files>
 git commit -am 'new stuff'
+
+git checkout master
+<make and commit changes>
+
+git checkout experiment
+git push origin experiment //push this new branch to the server.
+
+git checkout master
+git merge experiment
+<resolve conflicts if necessary>
+<add and commit>
+
+git branch -d experiment //delete when done with it
