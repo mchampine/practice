@@ -20,8 +20,10 @@ git merge experiment
 <resolve conflicts if necessary>
 <add and commit>
 
+git branch -d experiment //delete when done with it
+
 Note: had to add new remote to push after corruption/clone:
+Note: did this edit on github. Seem to have lost edit ability now.
 git remote add private git@github.com:mchampine/practice.git
 git push private master  //push master to new remote
 
-git branch -d experiment //delete when done with it
