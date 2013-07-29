@@ -31,9 +31,9 @@ Machine 2:
 ---------
 	git clone git@github.com:mchampine/practice.git  //clone via the private url
 
-Add a file, add it to staging, commit and push it to the server
+Add a file, add it to staging, commit and push it to the server:
 
-      	vi README
+	vi README
 	git add README
 	git commit -m 'added a readme'
 	git push origin master
